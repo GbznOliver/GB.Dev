@@ -155,6 +155,7 @@ header {
 
 .sobre-p {
     font-family: var(--fonte-principal);
+    font-size: 24px;
     margin: 50px 200px 50px 200px;
 }
 
@@ -253,9 +254,83 @@ header {
     font-size: 43px;
 }
 
+.card {
+    background-color: #ffffff;
+    width: 350px;
+    height: 500px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    flex: 300px;
+    max-width: 300px;
+    transition: transform 0.5s ease;
+}
 
+ /*mexer o card*/
+ .card:hover {
+    transform: translateY(-5px) scale(1.00);
+    box-shadow: 0 6px 15px rgba(165, 42, 42, 0.507);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    height: 35px;
+    border: none;
+    padding: 9px;
+    width: 80%;
+    text-align: center;
+  }
+
+
+.card div {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    height: 50%;
+}
+
+.card h1 {
+    font-size: 1.6rem;
+    font-family: var(--fonte-secundaria);
+    padding: 5px;
+}
   
+.card h2 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: var(--fonte-secundaria);
+    padding: 30px;
+    color: #000000;
+}
   
+.card button {
+    background-color: rgb(206, 171, 171);
+    border: none;
+    padding: 17px 40px;
+    font-size: 15px;
+    color: #333;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.4s ease;
+    margin: 10px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+}
+
+.card button:hover {
+    background-color: rgba(165, 42, 42, 0.733); 
+    transform: scale(1.07); 
+    color: white;
+}
 
 /*resposividade*/
 @media (max-width: 768px) {
@@ -304,6 +379,7 @@ header {
         margin: 1vh;
     }
     .navbar {
+        flex-direction: column; 
         gap: 15px;
     }
     .navbar a {
