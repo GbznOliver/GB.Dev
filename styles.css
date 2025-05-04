@@ -4,7 +4,6 @@
 :root {
     --cor-primaria:black;
     --cor-secundaria: white;
-    --cor-terciaria: rgb(15, 153, 141);
 
     --fonte-principal: "Nunito", sans-serif;
     --fonte-secundaria: "Montserrat", sans-serif;
@@ -66,7 +65,6 @@ header {
     flex-direction: column; 
     align-items: center; 
     margin-top: 20px;
-    background-color: rgba(221, 206, 184, 0.829);
     background: radial-gradient(circle,  rgba(221, 206, 184, 0.829) , #b3a395);
     padding: 180px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
@@ -349,6 +347,35 @@ span {
     background-color: rgba(165, 42, 42, 0.63); 
     transform: scale(1.07); 
     color: white;
+}
+
+.contato {
+    background: radial-gradient(circle,  rgba(221, 206, 184, 0.829) , #b3a395);
+    padding: 60px;
+    text-align: center;
+}
+
+.contato-h {
+    font-family: var(--fonte-secundaria);
+    font-size: 37px;
+}
+
+footer i {
+    color: black;
+    font-size: 2.1rem;
+    padding: 40px 10px 10px 10px;
+    transition: transform 0.3s ease, background-color 0.4s ease;
+}
+
+footer i:hover {
+    color: rgba(165, 42, 42, 0.863); 
+    transform: scale(1.20); 
+}
+
+.contato-p {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    bottom: 0;
 }
 
 /*resposividade*/
