@@ -402,6 +402,9 @@ span {
         justify-content: space-around;
         padding: 20px;
     }
+    .foto-perfil {
+        height: 200px;
+    }
     .navbar {
         flex-direction: column; 
         gap: 15px;
@@ -450,6 +453,9 @@ span {
     .card-central {
         display: flex;
         justify-content: space-around;
+    }
+    .foto-perfil {
+        height: 200px;
     }
     .navbar {
         flex-direction: column; 
